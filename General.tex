@@ -1,0 +1,88 @@
+
+\chapter{Face Recognition Process}
+
+\section{Face Detection}
+The process of recognizing a face in an image consists of two phases:
+
+\begin{enumerate}
+\itemsep0em
+\item \textbf{Face detection} – detecting the pixels in the image which represent the face. 
+\item \textbf{Face recognition} – the actual task of recognizing the face by analyzing the part of the imaged identified during the face detection phase.
+\end{enumerate}
+
+Numerous algorithms have been introduced and claimed to have accurate performance to tackle face detection problems. E.g. Principle Component Analysis, Local Binary Pattern, Fisherface algorithm, Gabor Wavelet method, Viola-Jones algorithm or even the Artificial Neural Networks. In this work the Local Binary Pattern Algorithm (\textit{LBP})was used to extract the faces from the given image data set. LBP is not the most efficient algorithm among the others listed above, however it is good enough to gather the required amount of training data for the face recognition process, which is the main topic of this thesis. 
+
+The problem of face detection is almost as complex as face recognition itself. The framework for both face detection and recognition is very similar, hence the difficulties that may be encountered are basically the same.
+Faces have a wide variability in poses, shapes, sizes and texture. The problems or challenges in face detection and recognition are listed as follow:
+
+\begin{itemize}
+\itemsep0em
+\item Illumination - the amount and type of light present during the image is captured can differ
+\item Pose - a face varies depends on the position of the camera.
+\item Presence of structural components such as moustache or beard
+\item Facial expression 
+\item Face occlusion such as glasses, scarf, mask etc.
+\item Image quality 
+\end{itemize}
+
+
+\section{Face Recognition}
+The face recognition phase can be applied in two different types of applications: 
+
+\begin{enumerate}
+\itemsep0em
+\item Verification - the process of affirming that a claimed identity is correct by comparing the offered claims of identity with one or more previously enrolled templates. Verification systems are generally described as a 1-to-1 matching system because the algorithm tries to match the biometric presented by the individual against a specific biometric already present in the system.
+\item Identification - the system attempts to determine the identity of an individual. The application  must check the biometric presented against all others already in the database. Identification systems are described as a 1-to-n matching system, where n is the total number of samples in the database. 
+\end{enumerate}
+
+Facial recognition can be approached by using many different kinds of machine learning algorithms. At a high level, these different algorithms can be classified into two groups based on the way they “learn” about data to make predictions: supervised and unsupervised learning.
+
+The goal of both methods is to find a specific relationships or structure in the input data that allow us to effectively produce correct output data. The fundamental factor that differs those two algorithm groups is that the supervised algorithm is being "taught" from a given training data set, whereas an unsupervised algorithm is deriving the inherent structure of our data without using explicitly-provided labels. Some examples of unsupervised learning algorithms are presented below.
+
+\subsection{Unsupervised learning}
+\par
+\textbf{Principal Component Analysis}
+\\
+The purpose of PCA is to reduce the large dimensionality of the data space to the smaller dimensionality of feature space, that nonetheless retains most of the sample's information. The method uses linear algebra to yield the directions (principal components) that maximize the variance of the data. 
+\\
+\par
+\textbf{Self-organizing Map}
+\\
+Self-organizing map is a type of artificial neural network that belongs to a category of competitive learning networks. During training, the output unit that provides the highest activation to a given input sample is declared the winner and is moved closer to the input sample, whereas the rest of the neurons remain unchanged.
+
+In short SOM algorithm implements a mapping from the high dimensional space to map units. Map units, so-called neurons, usually form a two-dimensional grid, therefore a SOM method provides a dimensionality reduction.
+\\
+\par
+\textbf{Independent Component Analysis}
+\\
+Independent component analysis, as the name suggest, has a lot in common with Principal Component Analysis. Both PCA and ICA seek a set of basis vectors, that the inputs data is projected against. The difference between those two algorithms is that PCA finds the set of vectors that best explains the variability of the input data under the constraint that it is orthogonal to the preceding components, whereas in ICA each vector represents an independent component of the input data. 
+
+\subsection{Supervised learning}
+ 
+Nevertheless, nowadays the supervised machine learning is much more more common across a wide range of industry use cases. The most popular supervised algorithms in terms of facial recognition are briefly described below.
+\\
+\par
+\textbf{Support Vector Machine}
+\\
+SVM belongs to the class of maximum margin classifiers. It performs a pattern recognition between two classes by finding a hyperplane that separates the largest possible fraction of points of the same class on the same side, while maximizing the distance from either class to the hyperplane. In terms of face recognition, the PCA is first used to extract features of face images and then discrimination functions between each pair of images are learned by support vector machine algorithm. 
+\\
+\par
+\textbf{Artificial Neural Network}
+\\
+Artificial Neural Network is an approach, based on a large collection of neural units, so-called neurons, structurized in layers. The deep learning models are inspired by the way biological neural networks in the human brain process information. In case of face recognition we have to deal with the problem of processing very high-dimensional inputs. To face this problem the Convolutional Neural Network (\textit{CNN}) was introduced. 
+\\\\
+In this thesis we will take a closer look on Principal Component Analysis, Support Vector Machine and Artificial Neural Networks.
+
+
+
+
+
+
+
+
+
+
+
+
+
+

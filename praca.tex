@@ -1,0 +1,173 @@
+%\documentclass[pdflatex,11pt]{aghdpl}
+% \documentclass{aghdpl}               % przy kompilacji programem latex
+\documentclass[pdflatex,en]{aghdpl}  % praca w języku angielskim
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb}
+\usepackage{caption}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{subcaption}
+% dodatkowe pakiety
+\usepackage{enumerate}
+\usepackage{listings}
+\usepackage{titling}
+\usepackage{tikz}
+\usepackage{xcolor,colortbl}
+\newcommand{\uvec}[1]{\boldsymbol{\hat{\textbf{#1}}}}
+\usetikzlibrary{matrix,arrows.meta,quotes,shadows,decorations.pathreplacing,positioning,fadings}
+\usepackage{cfr-lm}
+\colorlet{mewnol}{blue!75!cyan}%
+\colorlet{allanol}{blue!50!black}%
+\lstloadlanguages{TeX}
+
+% Default fixed font does not support bold face
+\DeclareFixedFont{\ttb}{T1}{txtt}{bx}{n}{10} % for bold
+\DeclareFixedFont{\ttm}{T1}{txtt}{m}{n}{10}  % for normal
+
+% Custom colors
+\usepackage{color}
+\definecolor{deepblue}{rgb}{0,0,0.5}
+\definecolor{deepred}{rgb}{0.6,0,0}
+\definecolor{deepgreen}{rgb}{0,0.5,0}
+
+\usepackage{listings}
+
+% Python style for highlighting
+\newcommand\pythonstyle{\lstset{
+language=Python,
+basicstyle=\ttm,
+otherkeywords={self},             % Add keywords here
+keywordstyle=\ttb\color{deepblue},
+emph={back_prop},          % Custom highlighting
+emphstyle=\ttb\color{deepred},    % Custom highlighting style
+stringstyle=\color{deepgreen},
+showstringspaces=false            % 
+}}
+
+
+% Python environment
+\lstnewenvironment{python}[1][]
+{
+\pythonstyle
+\lstset{#1}
+}
+{}
+
+% Python for external files
+\newcommand\pythonexternal[2][]{{
+\pythonstyle
+\lstinputlisting[#1]{#2}}}
+
+% Python for inline
+\newcommand\pythoninline[1]{{\pythonstyle\lstinline!#1!}}
+
+
+\lstset{
+  literate={ą}{{\k{a}}}1
+           {ć}{{\'c}}1
+           {ę}{{\k{e}}}1
+           {ó}{{\'o}}1
+           {ń}{{\'n}}1
+           {ł}{{\l{}}}1
+           {ś}{{\'s}}1
+           {ź}{{\'z}}1
+           {ż}{{\.z}}1
+           {Ą}{{\k{A}}}1
+           {Ć}{{\'C}}1
+           {Ę}{{\k{E}}}1
+           {Ó}{{\'O}}1
+           {Ń}{{\'N}}1
+           {Ł}{{\L{}}}1
+           {Ś}{{\'S}}1
+           {Ź}{{\'Z}}1
+           {Ż}{{\.Z}}1
+}
+
+%---------------------------------------------------------------------------
+
+\author{Magda Nowak-Trzos}
+\shortauthor{M. Nowak-Trzos}
+
+%\titlePL{Przygotowanie pracy dyplomowej w~systemie \LaTeX}
+\titleEN{Face recognition system based on deep neural networks}
+
+%\shorttitlePL{Przygotowanie pracy dyplomowej w~systemie \LaTeX} % %skrócona wersja tytułu jeśli jest bardzo długi
+\shorttitleEN{Face recognition system based on deep neural networks}
+
+%\thesistypePL{Praca magisterska}
+\thesistypeEN{Master of Science Thesis}
+
+%\supervisorPL{dr hab. Marcin Szpyrka}
+\supervisorEN{Adrian Horzyk Ph.D}
+
+\date{2018}
+
+%\departmentPL{Katedra Automatyki}
+\departmentEN{Department of Automatics}
+
+%\facultyPL{Wydział Elektrotechniki, Automatyki, Informatyki i %Elektroniki}
+\facultyEN{Faculty of Electrical Engineering, Automatics, Computer Science and Electronics}
+
+\acknowledgements{\dots}
+
+
+
+\setlength{\cftsecnumwidth}{10mm}
+
+%---------------------------------------------------------------------------
+
+\begin{document}
+
+\titlepages
+
+\begin{abstract}
+This paper provides an evaluation of various machine learning algorithms concerning the problem of facial recognition. First a survey of available facial recognition machine learning algorithms will be presented. The work will focus on three algorithms: eignenfaces, Support Vector Machine and Deep Learning. After the proper algorithm analysis the results of tests will be presented and compared.
+\end{abstract}
+
+
+\tableofcontents
+\clearpage
+
+
+\include{Introduction}
+\include{General}
+\include{PCA}
+\include{ANN}
+\include{MLP}
+\include{CNN}
+\include{SVM}
+\include{Summary}
+
+
+% itd.
+% \appendix
+% \include{dodatekA}
+% \include{dodatekB}
+% itd.
+
+\bibliographystyle{alpha}
+\bibliography{bibliografia}
+%\begin{thebibliography}{1}
+%
+%\bibitem{Dil00}
+%A.~Diller.
+%\newblock {\em LaTeX wiersz po wierszu}.
+%\newblock Wydawnictwo Helion, Gliwice, 2000.
+%
+%\bibitem{Lam92}
+%L.~Lamport.
+%\newblock {\em LaTeX system przygotowywania dokumentów}.
+%\newblock Wydawnictwo Ariel, Krakow, 1992.
+%
+%\bibitem{Alvis2011}
+%M.~Szpyrka.
+%\newblock {\em {On Line Alvis Manual}}.
+%\newblock AGH University of Science and Technology, 2011.cccccc
+%\newblock \\\texttt{http://fm.ia.agh.edu.pl/alvis:manual}.
+%
+%\end{thebibliography}
+
+\end{document}

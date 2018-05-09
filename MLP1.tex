@@ -1,0 +1,43 @@
+\begin{tikzpicture}[
+           > = Stealth, semithick,
+plain/.style = {draw=none, fill=none, yshift=11mm,
+                text width=7ex,  align=center},% for text in images, 
+   ec/.style = {draw=none},% for emty cells
+  net/.style = {% for matrix style
+    matrix of nodes,
+    nodes={circle, draw, semithick, minimum size=12mm, inner sep=0mm},% circles in image
+    nodes in empty cells,% for not used cells in matrix
+  column sep = 16mm, % distance between columns in matrix 
+     row sep = -3mm  % distance between rows in matrix
+            },
+]
+\matrix[net] (m)% m is matrix name, it is used for names of cell: firs has name m-1-1
+                % in empty space between ampersands will show circles: 
+                % i.e.: nodes of the neural network
+{
+|[plain]| $Input$ & |[plain]| $Hidden$ & |[plain]| $Output$ \\
+|[ec]|                &                         & |[ec]|                  \\
+                      & |[ec]|                  & |[ec]|                  \\
+|[ec]|                &                         &                         \\
+                      & |[ec]|                  & |[ec]|                  \\
+|[ec]|                &                         &                         \\
+                      & |[ec]|                  & |[ec]|                  \\
+|[ec]|                &                         & |[ec]|                  \\
+};
+\% inputs
+\foreach \in [count=\ir from 1] in {3,5,7}
+\draw[<-] (m-\in-1.west) -- node[above]{}+(-12mm,0);
+% connections between nodes in the first and second layer
+\foreach \j in {3,5,7}
+{
+\foreach \k in {2,4,6,8} \draw[->] (m-\j-1) -- (m-\k-2);
+}
+% connections between nodes in the second and third layer
+\foreach \j in {2,4,6,8}
+{
+\foreach \k in {4,6} \draw[->] (m-\j-2) -- (m-\k-3);
+}
+% output
+\draw[->] (m-4-3.east) -- node[above] {} +(12mm,0);
+\draw[->] (m-6-3.east) -- node[above] {} +(12mm,0);
+    \end{tikzpicture}
