@@ -177,8 +177,6 @@ There are two basic approaches for solving n-class problems with SVMs:
 \item pairwise approach - q(q-1)/2 SVMs are trained. Each SVM separates a pair of classes. The pairwise classifiers are arranged in trees, where each tree node represents an SVM. 
 \end{enumerate}
 
-Due to lower training complexity, the one-vs-all approach is preferable.
-
 \subsection{Face recognition}
 The system has a linear SVM for every person in the database. Each SVM is trained to distinguish between all images of a single person and all other images. Given a set of q people and a set of q SVMs, each one associated to one person, it is relatively easy to perform recognition. Specifying the threshold, the distance between input and given SVM models are computed as follows:
 
@@ -196,9 +194,9 @@ where $d_n(x) = max ({d_{i}}_{i=1}^q)$
 
 \section{Implementation and test results}
 
-The SVM algorithm was implemented with Python 3.6.1 with usage of numpy, PIL and sklearn libraries.
+The SVM algorithm was implemented with Python 3.6.1 with usage of numpy, PIL and sklearn libraries. 
 
-The first step in the algorithm is data preprocession. As in the Multilayered Perception approach, the images were preprocessed with PCA algorithm in order to reduce the dimensionality of input data, hence reducing the computational complexity of the algorithm.
+The first step in the algorithm is data preprocession. As in the Multilayered Perception approach, the images were preprocessed with PCA algorithm in order to reduce the dimensionality of input data, hence reducing the computational complexity of the algorithm. The algorithm is using one-vs-one approach.
 
 The tests were performed on two different databases: 
 \begin{itemize}
@@ -216,7 +214,7 @@ The database was divided into training and testing samples. The training was per
 \subsection{20 individuals}
 
 The first experiment was performed on 20 individuals from CFD database. 
-The Gaussian kernel was used. 
+The Gaussian and Polynomial kernels were tested. 
 
 The Gaussian kernel as a similarity function that measures the “distance” between a pair of examples, ($x_{i}$, $x_{j}$). The Gaussian kernel is also parameterized by a bandwidth parameter $\sigma$ (equation(???), which determines how fast the similarity metric decreases to 0 as the examples are further apart. 
 
@@ -244,15 +242,28 @@ The figure(??) presents the SVM training accuracy with varying $\gamma$ and C pa
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.75]{img/svm/gamma_C_20i.png}
+\includegraphics[scale=0.75]{img/svm/better_graphs/CFD_20i_rbf.png}
 \caption{Training score with varying gamma and C parameter for 20 individuals}
 \end{figure} 
 
 
-The best score (~0.85) was obtained with several configurations of $C$ and $\gamma$ parameters. The further testing was performed with $C = 10^3$ and $\gamma = 0.01$
+The best score (~0.85) was obtained with several configurations of $C$ and $\gamma$ parameters. The further testing was performed with $C = 10^3$ and $\gamma = 10^-4$
 
 In this configuration SVM algorithm reached 80\% of recognition rate on the testing samples.
 
+The same experiment was performed with usage of polynomial kernel. 
+The influence of polynomial degree was examined and is presented on figure (??).
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.75]{img/svm/better_graphs/CFD_20i_poly.png}
+\caption{Training score with varying polynomial degree and C parameter for 20 individuals}
+\end{figure} 
+
+On Figure(7.6 (??)) we can see that our data can be nicely separated with polynomial of second degree.  
+The recognition rate was tested on SVM trained with $C = 10$ and the degree = 2.
+
+Obtained result is ~70\%, which is 10 percentage points less than result of SVM trained with Gaussian kernel. 
 
 \subsection{40 individuals}
 
@@ -262,14 +273,24 @@ The results are presented below.
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.8]{img/svm/gamma_C_40i.png}
+\includegraphics[scale=0.75]{img/svm/better_graphs/CFD_40i_rbf.png}
 \caption{Training score with varying gamma and C parameter for 40 individuals}
 \end{figure} 
 
-The best score (~0.71) was obtained with several configurations of $C$ and $\gamma$ parameters. The further testing was performed with $C = 10^3$ and $\gamma = 0.001$
+The best score (~0.71) was obtained with several configurations of $C$ and $\gamma$ parameters. The further testing was performed with $C = 10^3$ and $\gamma = 10^-3$
 
 In this configuration SVM algorithm reached 60\% of recognition rate on the testing samples.
 
+The same experiment was performed with usage of polynomial kernel. 
+The influence of polynomial degree was examined and is presented on figure (??).
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.75]{img/svm/better_graphs/CFD_40i_poly.png}
+\caption{Training score with varying polynomial degree and C parameter for 40 individuals}
+\end{figure} 
+
+The best score was obtained with degree = 2 and $C = 10^4$. With these parameters recognition rate reached ~52\%, which is still worse than SVM trained with Gaussian kernel.
 
 \section{Tests on pictures captured in uncontrolled environment}
 
@@ -281,10 +302,42 @@ The results are presented below.
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.75]{img/svm/lfw/gamma_C_20i.png}
+\includegraphics[scale=0.75]{img/svm/better_graphs/lwf_rbf.png}
 \caption{Training score with varying gamma and C parameter for 20 individuals}
 \end{figure} 
 
-The best score ($~0.278$) was obtained with with $C = 10$ and $\gamma = 0.01$
+The best training score ($~0.278$) was obtained with with $C = 10$ and $\gamma = 0.01$
 In this configuration SVM algorithm reached 26,6\% of recognition rate on the testing samples.
+
+
+The same experiment was performed with usage of polynomial kernel. 
+The influence of polynomial degree was examined and is presented on figure (???).
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.75]{img/svm/better_graphs/lwf_poly.png}
+\caption{Training score with varying polynomial degree and C parameter for 20 individuals}
+\end{figure} 
+
+In this case, SVM obtained best results with third polynomial degree and $C = 10$. The obtained recognition rate was ~20\%.
+
+
+\section{SVM summary}
+
+To compare obtained results a tabular summary of the recognition rate for SVM algorithm with different kernels on each database is presented (Table 7.1).
+
+\begin{table}[H]
+	\centering
+	\caption{A tabular summary of the recognition rate for SVM algorithm with different kernels on each database}
+    \begin{tabular}{ | l | l | l | l |}
+    \hline
+    \rowcolor{lightgray}
+    Database &  Gaussian kernel & Polynomial kernel\\ \hline
+    CFD 20&  80\%  & 70\%\\ \hline
+	CFD 40& $60\%$ & $52\%$ \\ \hline
+    LFW & $26.6\%$ & $20\%$ \\ \hline
+    \end{tabular}
+\end{table}
+
+From these tests we can conclude that the gaussian kernel allows us to obtain better results for every database. As expected, the results are significantly better for pictures captured in controlled environment and small amount of data. Even though SVM has an advantage of small computing time, the results do not meet the expectations of good facial recognition system. 
 

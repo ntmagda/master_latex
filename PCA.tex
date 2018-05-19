@@ -2,12 +2,11 @@
 \chapter{Principal Component Analysis}
 \label{cha:PCA}
 
-Principal Component Analysis is a statistical procedure that uses an orthogonal transformation to convert a set of observations of possibly correlated variables into a set of values of linearly uncorrelated variables called principal components. In fact this approach reduce number of feature vectors. The main advantages of the PCA are its low sensitivity to noise, the reduction of the requirements of the memory, and the increase in the efficiency due to the operation in a space of smaller dimensions. In face recognition problem PCA is based on extracting the characteristic features of the face and representing the face as a linear combination of the so called eigenfaces obtained from the feature extraction process. PCA for face recognition is usually called Eigenfaces method.
+Principal Component Analysis is a statistical procedure that uses an orthogonal transformation to convert a set of observations of possibly correlated variables into a set of values of linearly uncorrelated variables called principal components. In fact this approach reduce number of feature vectors. The main advantages of the PCA are its low sensitivity to noise, the reduction of the requirements of the memory, and the increase in the efficiency due to the operation in a space of smaller dimensions. In face recognition problem PCA is based on extracting the characteristic features of the face and representing the face as a linear combination of so called eigenfaces obtained from the feature extraction process. PCA for face recognition is usually called Eigenfaces method.
 
 
 \section{Algorithm Background}
-
-When using these sort of matrix techniques in computer vision, representation of images must be considered. A square, $N$ by  $N$ image can be expressed as an $N^{2}$ dimensional vector. 
+The input data to the algorithm is a square, $N$ by  $N$ image that can be expressed as an $N^{2}$ dimensional vector. 
 
 \begin{equation}
 X = ( x_{1}, x_{2}, ... , x_{N^{2}})
@@ -33,7 +32,7 @@ In the next step the average of the image set is calculated as:
 averageFace = \frac{1}{M} \sum_{i=1}^{M} ImageVector_{i}
 \end{equation}
 
-The graphical representation of $avarageFace$ is presented in Figure 4.1.
+The graphical representation of $avarageFace$ is presented on $Figure 3.1$.
 
 \begin{figure}[H]
 \centering
@@ -51,7 +50,7 @@ $averageFace$ is calculated and subtracted from each face in the training set, w
 A = [\phi_{1}, \phi{2} \cdots \phi_{M}]
 \end{equation}
  
-In the next step the covariance matrix $C$ should be computed, from which the eigenvectors need to be derived. The basic formula for covariance matrix is presented in 4.6. 
+In the next step the covariance matrix $C$ should be computed, from which the eigenvectors need to be derived. The basic formula for covariance matrix is presented given by 
  \begin{equation}
  C= AA^{T}
  \end{equation}
@@ -64,7 +63,7 @@ Since we know that dimension of matrix $A$ is $N^{2} x M$, we can derive the dim
 
 It turns out that using such a high-dimensional matrix $C$ would be highly inefficient for further calculations. As a result we would get $N^{2}$ eigenvectors. The solution to this problem is dimensionality reduction.
 
-The matrix $C$ is computed as presented in 4.8
+The matrix $C$ is computed as follows
 
  \begin{equation}
  C= A^{T}A
@@ -74,7 +73,7 @@ The matrix $C$ is computed as presented in 4.8
  C \sim M x M
 \end{equation}
 
-The dimension of matrix C significantly decreased. In result of such an operation we will get $M$ eigenvectors each of $M$ dimension. 
+The dimension of matrix C significantly decreased. In result of such an operation we get $M$ eigenvectors ($v_{i}$) with $M$ elements each. 
 
 \begin{equation}
 Cv_{i} = \lambda_{i}v_{i}
@@ -82,11 +81,11 @@ Cv_{i} = \lambda_{i}v_{i}
 
 where $\lambda_{i}$ are eigenvalues and $v_{i}$ are eigenvectors. 
 
-The next step is to choose the $K$ eigenvectors such as $K < M$ and the whole training set can be represented as a linear combination of those chosen vectors. The eigenvectors that corresponds to zeroes eigenvalues are discarded. 
+The next step is to choose the $K$ eigenvectors such as $K < M$. The eigenvectors that corresponds to zero-eigenvalues are discarded. 
 
 The set of extracted significant eigenvectors have to be mapped back into the original dimensions, which provides the set of eigenfaces. 
 
-Using linear algebra principles, we can perform the mapping as described in formula 4.11
+Using linear algebra principles, we can perform the mapping as described in formula 3.11
 
 \begin{equation}
 u_{i} = Av_{i}
@@ -112,7 +111,7 @@ The eigenfaces $u_{i}$ may be considered as a set of features which characterize
 \caption{Less significant eigenfaces }
 \end{figure}
 
-On figure 4.2, we can observe 50 most significant eigenvectors - the ones with the highest eigenvalues, whereas figure 4.3 presents less significant eigenfaces. 
+On figure 3.2, we can observe 50 most significant eigenvectors - the ones with the highest eigenvalues, whereas figure 3.3 presents less significant eigenfaces. 
 
 The next step is to represent each normalized face in a training set as a linear combination of previously extracted eigenfaces. In this way we can represent each face in a training set as a one dimensional vector with elements corresponding to each eigenface. 
 

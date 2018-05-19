@@ -10,9 +10,9 @@
 \contentsline {chapter}{\numberline {4}Artificial Neural Networks}{13}
 \contentsline {section}{\numberline {4.1}Biological background}{13}
 \contentsline {section}{\numberline {4.2}Artificial Neural Network architecture}{14}
-\contentsline {subsection}{\numberline {4.2.1}A Single Neuron}{14}
-\contentsline {subsection}{\numberline {4.2.2}ANN topology}{15}
-\contentsline {section}{\numberline {4.3}Backpropagation}{16}
+\contentsline {subsection}{\numberline {4.2.1}Forward pass}{14}
+\contentsline {section}{\numberline {4.3}Backpropagation}{15}
+\contentsline {subsection}{\numberline {4.3.1}ANN topology}{16}
 \contentsline {chapter}{\numberline {5}Multi Layer Perception}{19}
 \contentsline {section}{\numberline {5.1}Implementation and test result}{19}
 \contentsline {section}{\numberline {5.2}Tests on pictures captured in controlled environment}{20}
@@ -22,18 +22,18 @@
 \contentsline {subsection}{\numberline {5.3.1}One hidden layer}{28}
 \contentsline {subsection}{\numberline {5.3.2}Two hidden layers}{30}
 \contentsline {chapter}{\numberline {6}Convolutional Neural Networks}{33}
-\contentsline {section}{\numberline {6.1}Implementation and test results}{34}
-\contentsline {subsection}{\numberline {6.1.1}Convolutional layers}{35}
-\contentsline {chapter}{\numberline {7}Support Vectors Machine}{36}
-\contentsline {section}{\numberline {7.1}Algorithm background}{36}
-\contentsline {subsection}{\numberline {7.1.1}The geometric margin}{37}
-\contentsline {subsection}{\numberline {7.1.2}Non linear separable dataset}{38}
-\contentsline {subsection}{\numberline {7.1.3}Multi-class classification problem}{39}
-\contentsline {subsection}{\numberline {7.1.4}Face recognition}{39}
-\contentsline {section}{\numberline {7.2}Implementation and test results}{40}
-\contentsline {section}{\numberline {7.3}Tests on pictures captured in controlled environment}{40}
-\contentsline {subsection}{\numberline {7.3.1}20 individuals}{40}
-\contentsline {subsection}{\numberline {7.3.2}40 individuals}{41}
-\contentsline {section}{\numberline {7.4}Tests on pictures captured in uncontrolled environment}{42}
-\contentsline {subsection}{\numberline {7.4.1}20 individuals}{42}
-\contentsline {chapter}{\numberline {8}Summary}{44}
+\contentsline {section}{\numberline {6.1}Implementation and test results}{36}
+\contentsline {section}{\numberline {6.2}Test results}{38}
+\contentsline {chapter}{\numberline {7}Support Vectors Machine}{41}
+\contentsline {section}{\numberline {7.1}Algorithm background}{41}
+\contentsline {subsection}{\numberline {7.1.1}The geometric margin}{42}
+\contentsline {subsection}{\numberline {7.1.2}Non linear separable dataset}{43}
+\contentsline {subsection}{\numberline {7.1.3}Multi-class classification problem}{44}
+\contentsline {subsection}{\numberline {7.1.4}Face recognition}{44}
+\contentsline {section}{\numberline {7.2}Implementation and test results}{45}
+\contentsline {section}{\numberline {7.3}Tests on pictures captured in controlled environment}{45}
+\contentsline {subsection}{\numberline {7.3.1}20 individuals}{45}
+\contentsline {subsection}{\numberline {7.3.2}40 individuals}{47}
+\contentsline {section}{\numberline {7.4}Tests on pictures captured in uncontrolled environment}{48}
+\contentsline {section}{\numberline {7.5}SVM summary}{50}
+\contentsline {chapter}{\numberline {8}Summary}{51}

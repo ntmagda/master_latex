@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.8.9)  9 MAY 2018 22:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.8.9)  19 MAY 2018 14:36
 entering extended mode
 **./praca.tex
 (praca.tex
@@ -1489,10 +1489,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 70--75
 
  (PCA.tex
 Chapter 3.
-<avarage_face.jpg, id=80, 85.5195pt x 86.12175pt>
+<avarage_face.jpg, id=81, 85.5195pt x 86.12175pt>
 File: avarage_face.jpg Graphic file (type jpg)
  <use avarage_face.jpg>
-Package pdftex.def Info: avarage_face.jpg used on input line 40.
+Package pdftex.def Info: avarage_face.jpg used on input line 39.
 (pdftex.def)             Requested size: 85.51927pt x 86.12154pt.
 
 Underfull \vbox (badness 3907) has occurred while \output is active []
@@ -1502,54 +1502,54 @@ Underfull \vbox (badness 3907) has occurred while \output is active []
 
 
 ]
-[9 <./avarage_face.jpg>] <eigenfaces.jpg, id=94, 969.6225pt x 448.074pt>
+<eigenfaces.jpg, id=91, 969.6225pt x 448.074pt>
 File: eigenfaces.jpg Graphic file (type jpg)
-
-<use eigenfaces.jpg>
-Package pdftex.def Info: eigenfaces.jpg used on input line 104.
+ <use eigenfaces.jpg>
+Package pdftex.def Info: eigenfaces.jpg used on input line 103.
 (pdftex.def)             Requested size: 436.3261pt x 201.63142pt.
- <eigenfaces_worse.jpg, id=95, 967.2135pt x 451.6875pt>
+ [9 <./avarage_face.jpg>] <eigenfaces_worse.jpg, id=96, 967.2135pt x 451.6875pt
+>
 File: eigenfaces_worse.jpg Graphic file (type jpg)
 
 <use eigenfaces_worse.jpg>
-Package pdftex.def Info: eigenfaces_worse.jpg used on input line 111.
+Package pdftex.def Info: eigenfaces_worse.jpg used on input line 110.
 (pdftex.def)             Requested size: 435.24205pt x 203.25749pt.
 
 Underfull \vbox (badness 3179) has occurred while \output is active []
 
  [10 <./eigenfaces.jpg> <./eigenfaces_worse.jpg>]
-<CFD_samples.jpg, id=100, 893.739pt x 280.6485pt>
+<CFD_samples.jpg, id=101, 893.739pt x 280.6485pt>
 File: CFD_samples.jpg Graphic file (type jpg)
  <use CFD_samples.jpg>
-Package pdftex.def Info: CFD_samples.jpg used on input line 154.
+Package pdftex.def Info: CFD_samples.jpg used on input line 153.
 (pdftex.def)             Requested size: 268.12376pt x 84.19519pt.
 
-<lfw_samples.jpg, id=101, 428.19975pt x 112.62074pt>
+<lfw_samples.jpg, id=102, 428.19975pt x 112.62074pt>
 File: lfw_samples.jpg Graphic file (type jpg)
  <use lfw_samples.jpg>
-Package pdftex.def Info: lfw_samples.jpg used on input line 161.
+Package pdftex.def Info: lfw_samples.jpg used on input line 160.
 (pdftex.def)             Requested size: 299.73778pt x 78.83397pt.
 
 [11 <./CFD_samples.jpg> <./lfw_samples.jpg>]
-<rec_rate_vs_number_of_eigenfaces.jpg, id=105, 364.36125pt x 278.84175pt>
+<rec_rate_vs_number_of_eigenfaces.jpg, id=106, 364.36125pt x 278.84175pt>
 File: rec_rate_vs_number_of_eigenfaces.jpg Graphic file (type jpg)
 
 <use rec_rate_vs_number_of_eigenfaces.jpg>
 Package pdftex.def Info: rec_rate_vs_number_of_eigenfaces.jpg used on input lin
-e 171.
+e 170.
 (pdftex.def)             Requested size: 255.05113pt x 195.18788pt.
 
-<eigenfaces_CFD.jpg, id=106, 878.0805pt x 280.6485pt>
+<eigenfaces_CFD.jpg, id=107, 878.0805pt x 280.6485pt>
 File: eigenfaces_CFD.jpg Graphic file (type jpg)
  <use eigenfaces_CFD.jpg>
-Package pdftex.def Info: eigenfaces_CFD.jpg used on input line 181.
+Package pdftex.def Info: eigenfaces_CFD.jpg used on input line 180.
 (pdftex.def)             Requested size: 263.42618pt x 84.19519pt.
 ) [12 <./rec_rate_vs_number_of_eigenfaces.jpg> <./eigenfaces_CFD.jpg>]
 \openout2 = `ANN.aux'.
 
  (ANN.tex
 Chapter 4.
-<neuron_schema.jpg, id=110, 341.47575pt x 240.29774pt>
+<neuron_schema.jpg, id=111, 341.47575pt x 240.29774pt>
 File: neuron_schema.jpg Graphic file (type jpg)
  <use neuron_schema.jpg>
 Package pdftex.def Info: neuron_schema.jpg used on input line 11.
@@ -1559,33 +1559,35 @@ Package pdftex.def Info: neuron_schema.jpg used on input line 11.
 
 
 
- <./neuron_schema.jpg>] <single_neuron.jpg, id=114, 279.444pt x 181.8795pt>
+ <./neuron_schema.jpg>] <single_neuron.jpg, id=115, 279.444pt x 181.8795pt>
 File: single_neuron.jpg Graphic file (type jpg)
 
 <use single_neuron.jpg>
 Package pdftex.def Info: single_neuron.jpg used on input line 41.
 (pdftex.def)             Requested size: 181.63644pt x 118.22026pt.
- [14 <./single_neuron.jpg>]
-<ANN_schema.jpg, id=119, 469.15276pt x 295.70474pt>
+ [14 <./single_neuron.jpg>] [15]
+<ANN_schema.jpg, id=123, 469.15276pt x 295.70474pt>
 File: ANN_schema.jpg Graphic file (type jpg)
  <use ANN_schema.jpg>
-Package pdftex.def Info: ANN_schema.jpg used on input line 79.
+Package pdftex.def Info: ANN_schema.jpg used on input line 158.
 (pdftex.def)             Requested size: 304.94566pt x 192.2058pt.
 
-<single_ANN_schema.jpg, id=120, 372.1905pt x 359.54324pt>
+[16] <single_ANN_schema.jpg, id=129, 372.1905pt x 359.54324pt>
 File: single_ANN_schema.jpg Graphic file (type jpg)
 
 <use single_ANN_schema.jpg>
-Package pdftex.def Info: single_ANN_schema.jpg used on input line 89.
+Package pdftex.def Info: single_ANN_schema.jpg used on input line 168.
 (pdftex.def)             Requested size: 241.92096pt x 233.70033pt.
- [15 <./ANN_schema.jpg>]
-<img/neural_net.png, id=124, 562.1pt x 280.04625pt>
+
+<img/neural_net.png, id=130, 562.1pt x 280.04625pt>
 File: img/neural_net.png Graphic file (type png)
  <use img/neural_net.png>
-Package pdftex.def Info: img/neural_net.png used on input line 95.
+Package pdftex.def Info: img/neural_net.png used on input line 174.
 (pdftex.def)             Requested size: 365.36067pt x 182.0279pt.
 
-[16 <./single_ANN_schema.jpg> <./img/neural_net.png>] [17]) [18]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [17 <./ANN_schema.jpg> <./single_ANN_schema.jpg>]) [18 <./img/neural_net.png>]
 \openout2 = `MLP.aux'.
 
  (MLP.tex
@@ -1606,25 +1608,25 @@ LaTeX Font Info:    Try loading font information for TS1+clm2j on input line 57
 ("C:\Program Files\MiKTeX 2.9\tex\latex\cfr-lm\ts1clm2j.fd"
 File: ts1clm2j.fd 2008/02/13 Fontinst v1.928 font definitions for TS1/clm2j.
 )
-<img/CFD1.jpg, id=139, 301.125pt x 301.125pt>
+<img/CFD1.jpg, id=141, 301.125pt x 301.125pt>
 File: img/CFD1.jpg Graphic file (type jpg)
  <use img/CFD1.jpg>
 Package pdftex.def Info: img/CFD1.jpg used on input line 94.
 (pdftex.def)             Requested size: 91.04742pt x 91.04579pt.
 
-<img/CFD2.jpg, id=140, 301.125pt x 301.125pt>
+<img/CFD2.jpg, id=142, 301.125pt x 301.125pt>
 File: img/CFD2.jpg Graphic file (type jpg)
  <use img/CFD2.jpg>
 Package pdftex.def Info: img/CFD2.jpg used on input line 98.
 (pdftex.def)             Requested size: 91.04742pt x 91.04579pt.
 
-<img/CFD3.jpg, id=141, 301.125pt x 301.125pt>
+<img/CFD3.jpg, id=143, 301.125pt x 301.125pt>
 File: img/CFD3.jpg Graphic file (type jpg)
  <use img/CFD3.jpg>
 Package pdftex.def Info: img/CFD3.jpg used on input line 102.
 (pdftex.def)             Requested size: 91.04742pt x 91.04579pt.
 
-<img/CFD4.jpg, id=142, 301.125pt x 301.125pt>
+<img/CFD4.jpg, id=144, 301.125pt x 301.125pt>
 File: img/CFD4.jpg Graphic file (type jpg)
  <use img/CFD4.jpg>
 Package pdftex.def Info: img/CFD4.jpg used on input line 110.
@@ -1646,7 +1648,7 @@ Missing character: There is no p in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no s in font nullfont!
-) <img/tests/20ppl/PCA_on_20ppl_vs_k.png, id=149, 354.72525pt x 269.808pt>
+) <img/tests/20ppl/PCA_on_20ppl_vs_k.png, id=151, 354.72525pt x 269.808pt>
 File: img/tests/20ppl/PCA_on_20ppl_vs_k.png Graphic file (type png)
 
 <use img/tests/20ppl/PCA_on_20ppl_vs_k.png>
@@ -1657,7 +1659,7 @@ ne 130.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [21 <./img/CFD4.jpg>]
-<img/tests/20ppl/learnig_rate1_v1.png, id=153, 462.528pt x 341.1144pt>
+<img/tests/20ppl/learnig_rate1_v1.png, id=155, 462.528pt x 341.1144pt>
 File: img/tests/20ppl/learnig_rate1_v1.png Graphic file (type png)
 
 <use img/tests/20ppl/learnig_rate1_v1.png>
@@ -1665,7 +1667,7 @@ Package pdftex.def Info: img/tests/20ppl/learnig_rate1_v1.png used on input lin
 e 156.
 (pdftex.def)             Requested size: 204.85846pt x 151.08493pt.
 
-<img/tests/20ppl/learnig_rate1_v2.png, id=154, 462.528pt x 341.1144pt>
+<img/tests/20ppl/learnig_rate1_v2.png, id=156, 462.528pt x 341.1144pt>
 File: img/tests/20ppl/learnig_rate1_v2.png Graphic file (type png)
 
 <use img/tests/20ppl/learnig_rate1_v2.png>
@@ -1673,7 +1675,7 @@ Package pdftex.def Info: img/tests/20ppl/learnig_rate1_v2.png used on input lin
 e 160.
 (pdftex.def)             Requested size: 204.85846pt x 151.08493pt.
 
-<img/tests/20ppl/learnig_rate1_v3.png, id=155, 462.528pt x 341.1144pt>
+<img/tests/20ppl/learnig_rate1_v3.png, id=157, 462.528pt x 341.1144pt>
 File: img/tests/20ppl/learnig_rate1_v3.png Graphic file (type png)
 
 <use img/tests/20ppl/learnig_rate1_v3.png>
@@ -1689,7 +1691,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 151--167
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [22 <./img/tests/20ppl/PCA_on_20ppl_vs_k.png>]
-<img/tests/20ppl/learning_rates.png, id=161, 432.4155pt x 329.43076pt>
+<img/tests/20ppl/learning_rates.png, id=163, 432.4155pt x 329.43076pt>
 File: img/tests/20ppl/learning_rates.png Graphic file (type png)
 
 <use img/tests/20ppl/learning_rates.png>
@@ -1699,14 +1701,14 @@ Package pdftex.def Info: img/tests/20ppl/learning_rates.png used on input line
  [23 <./img/tests/20ppl/learnig_rate1_v1.png> <./img/tests/20ppl/learnig_rate1_
 v2.png> <./img/tests/20ppl/learnig_rate1_v3.png> <./img/tests/20ppl/learning_ra
 tes.png>]
-<img/tests/40ppl/PCA_40.png, id=169, 358.33875pt x 272.217pt>
+<img/tests/40ppl/PCA_40.png, id=171, 358.33875pt x 272.217pt>
 File: img/tests/40ppl/PCA_40.png Graphic file (type png)
 
 <use img/tests/40ppl/PCA_40.png>
 Package pdftex.def Info: img/tests/40ppl/PCA_40.png used on input line 209.
 (pdftex.def)             Requested size: 179.16893pt x 136.10815pt.
  [24 <./img/tests/40ppl/PCA_40.png>]
-<img/tests/40ppl/k=27,h=27,60000epoch/res.png, id=174, 462.528pt x 341.1144pt>
+<img/tests/40ppl/k=27,h=27,60000epoch/res.png, id=176, 462.528pt x 341.1144pt>
 File: img/tests/40ppl/k=27,h=27,60000epoch/res.png Graphic file (type png)
 
 <use img/tests/40ppl/k=27,h=27,60000epoch/res.png>
@@ -1714,7 +1716,7 @@ Package pdftex.def Info: img/tests/40ppl/k=27,h=27,60000epoch/res.png used on i
 nput line 233.
 (pdftex.def)             Requested size: 231.26343pt x 170.55676pt.
  [25 <./img/tests/40ppl/k=27,h=27,60000epoch/res.png>]
-<img/tests/40ppl/k=27,h=10,50000epoch/res.png, id=179, 462.528pt x 341.1144pt>
+<img/tests/40ppl/k=27,h=10,50000epoch/res.png, id=181, 462.528pt x 341.1144pt>
 File: img/tests/40ppl/k=27,h=10,50000epoch/res.png Graphic file (type png)
 
 <use img/tests/40ppl/k=27,h=10,50000epoch/res.png>
@@ -1722,7 +1724,7 @@ Package pdftex.def Info: img/tests/40ppl/k=27,h=10,50000epoch/res.png used on i
 nput line 269.
 (pdftex.def)             Requested size: 204.85846pt x 151.08493pt.
 
-<img/tests/40ppl/k=27,h=33,60000epoch/res.png, id=180, 462.528pt x 341.1144pt>
+<img/tests/40ppl/k=27,h=33,60000epoch/res.png, id=182, 462.528pt x 341.1144pt>
 File: img/tests/40ppl/k=27,h=33,60000epoch/res.png Graphic file (type png)
 
 <use img/tests/40ppl/k=27,h=33,60000epoch/res.png>
@@ -1730,7 +1732,7 @@ Package pdftex.def Info: img/tests/40ppl/k=27,h=33,60000epoch/res.png used on i
 nput line 274.
 (pdftex.def)             Requested size: 204.85846pt x 151.08493pt.
 
-<img/tests/40ppl/k=27,h=56,60000epoch/res.png, id=181, 462.528pt x 341.1144pt>
+<img/tests/40ppl/k=27,h=56,60000epoch/res.png, id=183, 462.528pt x 341.1144pt>
 File: img/tests/40ppl/k=27,h=56,60000epoch/res.png Graphic file (type png)
 
 <use img/tests/40ppl/k=27,h=56,60000epoch/res.png>
@@ -1738,7 +1740,7 @@ Package pdftex.def Info: img/tests/40ppl/k=27,h=56,60000epoch/res.png used on i
 nput line 278.
 (pdftex.def)             Requested size: 204.85846pt x 151.08493pt.
 
-<img/tests/shifts/shifted_image0.jpg, id=182, 301.125pt x 301.125pt>
+<img/tests/shifts/shifted_image0.jpg, id=184, 301.125pt x 301.125pt>
 File: img/tests/shifts/shifted_image0.jpg Graphic file (type jpg)
 
 <use img/tests/shifts/shifted_image0.jpg>
@@ -1746,7 +1748,7 @@ Package pdftex.def Info: img/tests/shifts/shifted_image0.jpg used on input line
  305.
 (pdftex.def)             Requested size: 136.57462pt x 136.58017pt.
 
-<img/tests/shifts/shifted_image1.jpg, id=183, 301.125pt x 301.125pt>
+<img/tests/shifts/shifted_image1.jpg, id=185, 301.125pt x 301.125pt>
 File: img/tests/shifts/shifted_image1.jpg Graphic file (type jpg)
 
 <use img/tests/shifts/shifted_image1.jpg>
@@ -1754,7 +1756,7 @@ Package pdftex.def Info: img/tests/shifts/shifted_image1.jpg used on input line
  309.
 (pdftex.def)             Requested size: 136.57462pt x 136.58017pt.
 
-<img/tests/shifts/shifted_image2.jpg, id=184, 301.125pt x 301.125pt>
+<img/tests/shifts/shifted_image2.jpg, id=186, 301.125pt x 301.125pt>
 File: img/tests/shifts/shifted_image2.jpg Graphic file (type jpg)
 
 <use img/tests/shifts/shifted_image2.jpg>
@@ -1762,7 +1764,7 @@ Package pdftex.def Info: img/tests/shifts/shifted_image2.jpg used on input line
  314.
 (pdftex.def)             Requested size: 136.57462pt x 136.58017pt.
 
-<img/tests/shifts/shifted_image3.jpg, id=185, 301.125pt x 301.125pt>
+<img/tests/shifts/shifted_image3.jpg, id=187, 301.125pt x 301.125pt>
 File: img/tests/shifts/shifted_image3.jpg Graphic file (type jpg)
 
 <use img/tests/shifts/shifted_image3.jpg>
@@ -1771,14 +1773,14 @@ Package pdftex.def Info: img/tests/shifts/shifted_image3.jpg used on input line
 (pdftex.def)             Requested size: 136.57462pt x 136.58017pt.
  [26 <./img/tests/40ppl/k=27,h=10,50000epoch/res.png> <./img/tests/40ppl/k=27,h
 =33,60000epoch/res.png> <./img/tests/40ppl/k=27,h=56,60000epoch/res.png>]
-<img/tests/shifts/image.jpg, id=193, 301.125pt x 301.125pt>
+<img/tests/shifts/image.jpg, id=195, 301.125pt x 301.125pt>
 File: img/tests/shifts/image.jpg Graphic file (type jpg)
 
 <use img/tests/shifts/image.jpg>
 Package pdftex.def Info: img/tests/shifts/image.jpg used on input line 327.
 (pdftex.def)             Requested size: 136.57462pt x 136.58017pt.
 
-<img/tests/shifts/flipped_image.jpg, id=194, 301.125pt x 301.125pt>
+<img/tests/shifts/flipped_image.jpg, id=196, 301.125pt x 301.125pt>
 File: img/tests/shifts/flipped_image.jpg Graphic file (type jpg)
 
 <use img/tests/shifts/flipped_image.jpg>
@@ -1786,14 +1788,14 @@ Package pdftex.def Info: img/tests/shifts/flipped_image.jpg used on input line
 331.
 (pdftex.def)             Requested size: 136.57462pt x 136.58017pt.
 
-<img/tests/lwf/sample1.jpg, id=195, 76.285pt x 76.285pt>
+<img/tests/lwf/sample1.jpg, id=197, 76.285pt x 76.285pt>
 File: img/tests/lwf/sample1.jpg Graphic file (type jpg)
 
 <use img/tests/lwf/sample1.jpg>
 Package pdftex.def Info: img/tests/lwf/sample1.jpg used on input line 350.
 (pdftex.def)             Requested size: 91.04742pt x 91.05148pt.
 
-<img/tests/lwf/sample2.jpg, id=196, 76.285pt x 76.285pt>
+<img/tests/lwf/sample2.jpg, id=198, 76.285pt x 76.285pt>
 File: img/tests/lwf/sample2.jpg Graphic file (type jpg)
 
 <use img/tests/lwf/sample2.jpg>
@@ -1805,14 +1807,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [27 <./img/tests/shifts/shifted_image0.jpg> <./img/tests/shifts/shifted_image1
 .jpg> <./img/tests/shifts/shifted_image2.jpg> <./img/tests/shifts/shifted_image
 3.jpg> <./img/tests/shifts/image.jpg> <./img/tests/shifts/flipped_image.jpg>]
-<img/tests/lwf/40ppl/PCA.png, id=202, 462.528pt x 341.1144pt>
+<img/tests/lwf/40ppl/PCA.png, id=204, 462.528pt x 341.1144pt>
 File: img/tests/lwf/40ppl/PCA.png Graphic file (type png)
 
 <use img/tests/lwf/40ppl/PCA.png>
 Package pdftex.def Info: img/tests/lwf/40ppl/PCA.png used on input line 369.
 (pdftex.def)             Requested size: 231.26343pt x 170.55676pt.
 
-<img/tests/lwf/40ppl/PCA_MLPk20h11.png, id=203, 462.528pt x 341.1144pt>
+<img/tests/lwf/40ppl/PCA_MLPk20h11.png, id=205, 462.528pt x 341.1144pt>
 File: img/tests/lwf/40ppl/PCA_MLPk20h11.png Graphic file (type png)
 
 <use img/tests/lwf/40ppl/PCA_MLPk20h11.png>
@@ -1820,7 +1822,7 @@ Package pdftex.def Info: img/tests/lwf/40ppl/PCA_MLPk20h11.png used on input li
 ne 393.
 (pdftex.def)             Requested size: 204.85846pt x 151.08493pt.
 
-<img/tests/lwf/40ppl/PCA_MLPk1520.png, id=204, 462.528pt x 341.1144pt>
+<img/tests/lwf/40ppl/PCA_MLPk1520.png, id=206, 462.528pt x 341.1144pt>
 File: img/tests/lwf/40ppl/PCA_MLPk1520.png Graphic file (type png)
 
 <use img/tests/lwf/40ppl/PCA_MLPk1520.png>
@@ -1828,7 +1830,7 @@ Package pdftex.def Info: img/tests/lwf/40ppl/PCA_MLPk1520.png used on input lin
 e 397.
 (pdftex.def)             Requested size: 204.85846pt x 151.08493pt.
 
-<img/tests/lwf/40ppl/PCA_MLPk10h20.png, id=205, 462.528pt x 341.1144pt>
+<img/tests/lwf/40ppl/PCA_MLPk10h20.png, id=207, 462.528pt x 341.1144pt>
 File: img/tests/lwf/40ppl/PCA_MLPk10h20.png Graphic file (type png)
 
 <use img/tests/lwf/40ppl/PCA_MLPk10h20.png>
@@ -1843,7 +1845,7 @@ ne 407.
 (pdftex.def)             Requested size: 204.85846pt x 151.08493pt.
  [28 <./img/tests/lwf/sample1.jpg> <./img/tests/lwf/sample2.jpg> <./img/tests/l
 wf/40ppl/PCA.png>]
-<img/tests/lwf/40ppl/PCA_MLPk15h25.png, id=211, 462.528pt x 334.6101pt>
+<img/tests/lwf/40ppl/PCA_MLPk15h25.png, id=213, 462.528pt x 334.6101pt>
 File: img/tests/lwf/40ppl/PCA_MLPk15h25.png Graphic file (type png)
 
 <use img/tests/lwf/40ppl/PCA_MLPk15h25.png>
@@ -1851,7 +1853,7 @@ Package pdftex.def Info: img/tests/lwf/40ppl/PCA_MLPk15h25.png used on input li
 ne 418.
 (pdftex.def)             Requested size: 204.85846pt x 148.20409pt.
 
-<img/tests/lwf/40ppl/PCA_MLPk15h35.png, id=212, 462.528pt x 341.1144pt>
+<img/tests/lwf/40ppl/PCA_MLPk15h35.png, id=214, 462.528pt x 341.1144pt>
 File: img/tests/lwf/40ppl/PCA_MLPk15h35.png Graphic file (type png)
 
 <use img/tests/lwf/40ppl/PCA_MLPk15h35.png>
@@ -1859,7 +1861,7 @@ Package pdftex.def Info: img/tests/lwf/40ppl/PCA_MLPk15h35.png used on input li
 ne 422.
 (pdftex.def)             Requested size: 204.85846pt x 151.08493pt.
 
-<img/tests/lwf/40ppl/PCAk15h20.png, id=213, 462.528pt x 341.1144pt>
+<img/tests/lwf/40ppl/PCAk15h20.png, id=215, 462.528pt x 341.1144pt>
 File: img/tests/lwf/40ppl/PCAk15h20.png Graphic file (type png)
 
 <use img/tests/lwf/40ppl/PCAk15h20.png>
@@ -1891,7 +1893,7 @@ Missing character: There is no u in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no s in font nullfont!
 ) [30 <./img/tests/lwf/40ppl/PCAk15h20.png>]
-<img/tests/lwf/40ppl/h2/PCA_MLP15_10_102.png, id=226, 462.528pt x 341.1144pt>
+<img/tests/lwf/40ppl/h2/PCA_MLP15_10_102.png, id=228, 462.528pt x 341.1144pt>
 File: img/tests/lwf/40ppl/h2/PCA_MLP15_10_102.png Graphic file (type png)
 
 <use img/tests/lwf/40ppl/h2/PCA_MLP15_10_102.png>
@@ -1899,7 +1901,7 @@ Package pdftex.def Info: img/tests/lwf/40ppl/h2/PCA_MLP15_10_102.png used on in
 put line 468.
 (pdftex.def)             Requested size: 204.85846pt x 151.08493pt.
 
-<img/tests/lwf/40ppl/h2/PCA_MLP15_10_103.png, id=227, 462.528pt x 341.1144pt>
+<img/tests/lwf/40ppl/h2/PCA_MLP15_10_103.png, id=229, 462.528pt x 341.1144pt>
 File: img/tests/lwf/40ppl/h2/PCA_MLP15_10_103.png Graphic file (type png)
 
 <use img/tests/lwf/40ppl/h2/PCA_MLP15_10_103.png>
@@ -1907,7 +1909,7 @@ Package pdftex.def Info: img/tests/lwf/40ppl/h2/PCA_MLP15_10_103.png used on in
 put line 471.
 (pdftex.def)             Requested size: 204.85846pt x 151.08493pt.
 
-<img/tests/lwf/40ppl/h2/PCA_MLP15_10_10.png, id=228, 462.528pt x 341.1144pt>
+<img/tests/lwf/40ppl/h2/PCA_MLP15_10_10.png, id=230, 462.528pt x 341.1144pt>
 File: img/tests/lwf/40ppl/h2/PCA_MLP15_10_10.png Graphic file (type png)
 
 <use img/tests/lwf/40ppl/h2/PCA_MLP15_10_10.png>
@@ -1915,7 +1917,7 @@ Package pdftex.def Info: img/tests/lwf/40ppl/h2/PCA_MLP15_10_10.png used on inp
 ut line 481.
 (pdftex.def)             Requested size: 204.85846pt x 151.08493pt.
 
-<img/tests/lwf/40ppl/h2/PCA_MLP15_10_101.png, id=229, 462.528pt x 341.1144pt>
+<img/tests/lwf/40ppl/h2/PCA_MLP15_10_101.png, id=231, 462.528pt x 341.1144pt>
 File: img/tests/lwf/40ppl/h2/PCA_MLP15_10_101.png Graphic file (type png)
 
 <use img/tests/lwf/40ppl/h2/PCA_MLP15_10_101.png>
@@ -1923,7 +1925,7 @@ Package pdftex.def Info: img/tests/lwf/40ppl/h2/PCA_MLP15_10_101.png used on in
 put line 484.
 (pdftex.def)             Requested size: 204.85846pt x 151.08493pt.
 
-<img/tests/lwf/40ppl/h2/PCA_MLP15_10_104_best.png, id=230, 462.528pt x 341.1144
+<img/tests/lwf/40ppl/h2/PCA_MLP15_10_104_best.png, id=232, 462.528pt x 341.1144
 pt>
 File: img/tests/lwf/40ppl/h2/PCA_MLP15_10_104_best.png Graphic file (type png)
  <use img/tests/lwf/40ppl/h2/PCA_MLP15_10_104_best.png>
@@ -1939,111 +1941,166 @@ _10_104_best.png>]
 
 (CNN.tex
 Chapter 6.
-
-Underfull \hbox (badness 10000) in paragraph at lines 40--44
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 40--44
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 40--44
-
- []
-
 [33
 
 
 
-] <img/proces.png, id=245, 575.751pt x 179.4705pt>
+]
+Underfull \hbox (badness 10000) in paragraph at lines 66--70
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--70
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--70
+
+ []
+
+<img/proces.png, id=247, 575.751pt x 179.4705pt>
 File: img/proces.png Graphic file (type png)
  <use img/proces.png>
-Package pdftex.def Info: img/proces.png used on input line 55.
+Package pdftex.def Info: img/proces.png used on input line 81.
 (pdftex.def)             Requested size: 403.02296pt x 125.62848pt.
+ [34 <./img/proces.png>] [35]
+Underfull \vbox (badness 3449) has occurred while \output is active []
 
-[34 <./img/proces.png>]) [35]
+ [36]
+<img/inception_v3_architecture.png, id=259, 910.602pt x 339.669pt>
+File: img/inception_v3_architecture.png Graphic file (type png)
+
+<use img/inception_v3_architecture.png>
+Package pdftex.def Info: img/inception_v3_architecture.png used on input line 2
+55.
+(pdftex.def)             Requested size: 455.29988pt x 169.83408pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [37]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [38 <./img/inception_v3_architecture.png>]
+<img/train_acc.png, id=266, 866.0355pt x 308.352pt>
+File: img/train_acc.png Graphic file (type png)
+ <use img/train_acc.png>
+Package pdftex.def Info: img/train_acc.png used on input line 304.
+(pdftex.def)             Requested size: 433.0167pt x 154.17561pt.
+
+<img/valid_loss.png, id=267, 849.1725pt x 309.5565pt>
+File: img/valid_loss.png Graphic file (type png)
+ <use img/valid_loss.png>
+Package pdftex.def Info: img/valid_loss.png used on input line 310.
+(pdftex.def)             Requested size: 424.5852pt x 154.77786pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [39 <./img/train_acc.png>]) [40 <./img/valid_loss.png>]
 \openout2 = `SVM.aux'.
 
  (SVM.tex
 Chapter 7.
-<img/svm/linear.png, id=255, 358.941pt x 255.354pt>
+<img/svm/linear.png, id=277, 358.941pt x 255.354pt>
 File: img/svm/linear.png Graphic file (type png)
  <use img/svm/linear.png>
 Package pdftex.def Info: img/svm/linear.png used on input line 11.
 (pdftex.def)             Requested size: 179.47005pt x 127.67668pt.
 
-[36
+[41
 
 
 
  <./img/svm/linear.png>]
-<img/svm/ksi.png, id=260, 346.29375pt x 285.4665pt>
+<img/svm/ksi.png, id=282, 346.29375pt x 285.4665pt>
 File: img/svm/ksi.png Graphic file (type png)
  <use img/svm/ksi.png>
 Package pdftex.def Info: img/svm/ksi.png used on input line 84.
 (pdftex.def)             Requested size: 173.14644pt x 142.7329pt.
 
-[37 <./img/svm/ksi.png>]
-<img/svm/nonlinear.png, id=266, 365.56575pt x 285.4665pt>
+[42 <./img/svm/ksi.png>]
+<img/svm/nonlinear.png, id=288, 365.56575pt x 285.4665pt>
 File: img/svm/nonlinear.png Graphic file (type png)
 
 <use img/svm/nonlinear.png>
 Package pdftex.def Info: img/svm/nonlinear.png used on input line 108.
 (pdftex.def)             Requested size: 182.78242pt x 142.7329pt.
- [38 <./img/svm/nonlinear.png>]
+ [43 <./img/svm/nonlinear.png>]
 
-LaTeX Warning: Command \textbullet invalid in math mode on input line 186.
+LaTeX Warning: Command \textbullet invalid in math mode on input line 184.
 
 
-LaTeX Warning: Command \textbullet invalid in math mode on input line 186.
+LaTeX Warning: Command \textbullet invalid in math mode on input line 184.
 
-[39] <img/svm/gaussian.png, id=274, 1520.68124pt x 397.485pt>
+[44] <img/svm/gaussian.png, id=296, 1520.68124pt x 397.485pt>
 File: img/svm/gaussian.png Graphic file (type png)
 
 <use img/svm/gaussian.png>
-Package pdftex.def Info: img/svm/gaussian.png used on input line 239.
+Package pdftex.def Info: img/svm/gaussian.png used on input line 237.
 (pdftex.def)             Requested size: 410.58943pt x 107.32237pt.
 
-<img/svm/gamma_C_20i.png, id=275, 649.7073pt x 341.1144pt>
-File: img/svm/gamma_C_20i.png Graphic file (type png)
+<img/svm/better_graphs/CFD_20i_rbf.png, id=297, 462.528pt x 341.1144pt>
+File: img/svm/better_graphs/CFD_20i_rbf.png Graphic file (type png)
 
-<use img/svm/gamma_C_20i.png>
-Package pdftex.def Info: img/svm/gamma_C_20i.png used on input line 247.
-(pdftex.def)             Requested size: 487.27928pt x 255.83514pt.
+<use img/svm/better_graphs/CFD_20i_rbf.png>
+Package pdftex.def Info: img/svm/better_graphs/CFD_20i_rbf.png used on input li
+ne 245.
+(pdftex.def)             Requested size: 346.89514pt x 255.83514pt.
+ [45 <./img/svm/gaussian.png>]
+<img/svm/better_graphs/CFD_20i_poly.png, id=301, 462.528pt x 341.1144pt>
+File: img/svm/better_graphs/CFD_20i_poly.png Graphic file (type png)
 
-Overfull \hbox (32.03517pt too wide) in paragraph at lines 247--248
- [][] 
- []
+<use img/svm/better_graphs/CFD_20i_poly.png>
+Package pdftex.def Info: img/svm/better_graphs/CFD_20i_poly.png used on input l
+ine 259.
+(pdftex.def)             Requested size: 346.89514pt x 255.83514pt.
+ [46 <./img/svm/better_graphs/CFD_20i_rbf.png> <./img/svm/better_graphs/CFD_20i
+_poly.png>]
+<img/svm/better_graphs/CFD_40i_rbf.png, id=308, 462.528pt x 341.1144pt>
+File: img/svm/better_graphs/CFD_40i_rbf.png Graphic file (type png)
 
-[40 <./img/svm/gaussian.png>]
-<img/svm/gamma_C_40i.png, id=280, 514.92375pt x 293.29575pt>
-File: img/svm/gamma_C_40i.png Graphic file (type png)
+<use img/svm/better_graphs/CFD_40i_rbf.png>
+Package pdftex.def Info: img/svm/better_graphs/CFD_40i_rbf.png used on input li
+ne 276.
+(pdftex.def)             Requested size: 346.89514pt x 255.83514pt.
 
-<use img/svm/gamma_C_40i.png>
-Package pdftex.def Info: img/svm/gamma_C_40i.png used on input line 265.
-(pdftex.def)             Requested size: 411.93954pt x 234.6369pt.
+<img/svm/better_graphs/CFD_40i_poly.png, id=309, 462.528pt x 341.1144pt>
+File: img/svm/better_graphs/CFD_40i_poly.png Graphic file (type png)
+
+<use img/svm/better_graphs/CFD_40i_poly.png>
+Package pdftex.def Info: img/svm/better_graphs/CFD_40i_poly.png used on input l
+ine 289.
+(pdftex.def)             Requested size: 346.89514pt x 255.83514pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [41 <./img/svm/gamma_C_20i.png>]
-<img/svm/lfw/gamma_C_20i.png, id=285, 554.07pt x 316.18124pt>
-File: img/svm/lfw/gamma_C_20i.png Graphic file (type png)
+ [47 <./img/svm/better_graphs/CFD_40i_rbf.png>]
+<img/svm/better_graphs/lwf_rbf.png, id=314, 462.528pt x 341.1144pt>
+File: img/svm/better_graphs/lwf_rbf.png Graphic file (type png)
 
-<use img/svm/lfw/gamma_C_20i.png>
-Package pdftex.def Info: img/svm/lfw/gamma_C_20i.png used on input line 286.
-(pdftex.def)             Requested size: 415.55148pt x 237.13535pt.
+<use img/svm/better_graphs/lwf_rbf.png>
+Package pdftex.def Info: img/svm/better_graphs/lwf_rbf.png used on input line 3
+05.
+(pdftex.def)             Requested size: 346.89514pt x 255.83514pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [42 <./img/svm/gamma_C_40i.png>]) [43 <./img/svm/lfw/gamma_C_20i.png>]
+ [48 <./img/svm/better_graphs/CFD_40i_poly.png>]
+<img/svm/better_graphs/lwf_poly.png, id=319, 462.528pt x 341.1144pt>
+File: img/svm/better_graphs/lwf_poly.png Graphic file (type png)
+
+<use img/svm/better_graphs/lwf_poly.png>
+Package pdftex.def Info: img/svm/better_graphs/lwf_poly.png used on input line 
+318.
+(pdftex.def)             Requested size: 346.89514pt x 255.83514pt.
+ [49 <./img/svm/better_graphs/lwf_rbf.png> <./img/svm/better_graphs/lwf_poly.pn
+g>]) [50]
 \openout2 = `Summary.aux'.
 
  (Summary.tex
 Chapter 8.
-) [44
+) [51
 
 
 
@@ -2052,17 +2109,17 @@ No file praca.bbl.
 (praca.aux (Introduction.aux) (General.aux) (PCA.aux) (ANN.aux) (MLP.aux)
 (CNN.aux) (SVM.aux) (Summary.aux)) ) 
 Here is how much of TeX's memory you used:
- 21212 strings out of 493323
- 393805 string characters out of 3139061
- 438059 words of memory out of 3000000
- 24102 multiletter control sequences out of 15000+200000
+ 21243 strings out of 493323
+ 394884 string characters out of 3139061
+ 446065 words of memory out of 3000000
+ 24126 multiletter control sequences out of 15000+200000
  119390 words of font info for 100 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,16n,82p,953b,1541s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,27n,82p,951b,1541s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvip
-s/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C
-:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cfr-lm/dotdigits-clm.enc}{C:/Program
- Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Program Files/MiKTeX 2.9/fo
+s/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cfr-lm/dotdigits-cl
+m.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Program Fi
+les/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fo
 nts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/
 lm-mathex.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cfr-lm/t1-clm.enc}<C
 :/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Program Files/M
@@ -2082,9 +2139,9 @@ lm/lmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><
 C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy7.pfb><C:/Program Files/M
 iKTeX 2.9/fonts/type1/public/txfonts/t1xbtt.pfb><C:/Program Files/MiKTeX 2.9/fo
 nts/type1/public/txfonts/t1xtt.pfb>
-Output written on praca.pdf (47 pages, 2836347 bytes).
+Output written on praca.pdf (54 pages, 3366967 bytes).
 PDF statistics:
- 380 PDF objects out of 1000 (max. 8388607)
+ 415 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 389 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 419 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -32,7 +32,7 @@ That is also one of the features of Artificial Neural Networks. The system inspi
 
 \section{Artificial Neural Network architecture}
 
-\subsection{A Single Neuron}
+\subsection{Forward pass}
 
 The smallest unit of computation in a neural network is the neuron, also called a node or unit. It receives an input from the other neurons or (in case of input neurons) from the external source. Each input has an associated weight, which is assigned proportionally to its relative importance to other inputs. The neuron produces the output by applying so called activation function to the weighted sum of its inputs.
 
@@ -41,6 +41,7 @@ The smallest unit of computation in a neural network is the neuron, also called 
 \includegraphics[scale=0.65]{single_neuron.jpg}
 \caption{Single Neuron}
 \end{figure} 
+
 
 The activation function is applied in order to introduce non-linearity into the neurons' output. The choice of activation function is wide and it remains as an active area of research. The most commonly used activation functions are presented below: 
 
@@ -52,7 +53,7 @@ The activation function is applied in order to introduce non-linearity into the 
 \end{equation}
 \item Hyperbolic tangent: squashes the input into the range between -1 and 1
 \begin{equation}
-tanh(x) = \frac{e^{z} - e^{-z}}{e^{z} + e^{-z}}
+tanh(x) = \frac{e^{x} - e^{-x}}{e^{x} + e^{-x}}
 \end{equation}
 \item Rectified Linear Unit (ReLU): It takes a real-valued input and thresholds it at zero
 \begin{equation}
@@ -60,7 +61,85 @@ f(x) = max(0, x)
 \end{equation}
 \end{itemize}
 
-According to the recent publications the ReLU function is believed to perform better than the other activation functions. Its simplicity reduces the computational complexity - it does not involve expensive operations such as exponentials. Another big advantage of ReLU is non-saturation of its gradient, which greatly accelerates the convergence of stochastic gradient descent compared to the sigmoid / tanh functions (TODO paper by Krizhevsky et al).
+According to the recent publications the ReLU function is believed to perform better than the other activation functions. Its simplicity reduces the computational complexity - it does not involve expensive operations such as exponentials. Another big advantage of ReLU is non-saturation of its gradient, which greatly accelerates the convergence of stochastic gradient descent compared to the sigmoid / tanh functions (TODO paper by Krizhevsky et 
+al).
+
+The general equation describing the neural network forward pass is given by:
+
+\begin{equation}
+\vec{o} = f(\vec{w} \cdot \vec{x} + b) 
+\end{equation}
+
+where $o$ is the output vector, $f$ is an activation function, $\vec{w}$ is a weights vector, $\vec{x}$ is a vector of layer input, $b$ is a bias.
+
+\section{Backpropagation}
+
+One of the main requirements for training this kind of algorithms is data. All learning algorithms use data in their training processes, but ANN require more than most.Given the data, there are various learning algorithms, from which gradient descent (backpropagation) is considered the most successful of all of them.
+
+
+Backpropagation, also called gradient descent, is a common method for training a neural network. It is used for training Multilayer Perception Network as well as Convolutional Neural Network.
+
+The basic idea of gradient descent method is to adjust the parameters of the neural networks in the way that the computed difference between predicted and expected values will be minimized. 
+
+The choice of error functions (cost functions) is wide. One of the simplest approaches is to calculate the Euclidean distance between the predicted $o$ and expected $o'$ values: 
+
+\begin{equation}
+E_{1}(o,o') = \frac{||o-o'||^{2}}{2}
+\end{equation}
+
+The error can be also calculated using Mean Squared Error: 
+\begin{equation}
+E_{2}(o,o') = \frac{\sum_{k=1}^{K}(o_{i} - o'_{i})^2}{K}
+\end{equation}
+where $K$ is the size of output vector.
+
+When using a neural network to perform classification and prediction, it is usually better to use cross-entropy error than classification error or mean squared error, due to the better convergence of the gradient.
+
+The cross-entropy error function for multi-class output is defined as:
+
+\begin{equation}
+E_{3}(o, o') = -\sum_{i=1}^K o'_{i} \ln(o_{i})\end{equation} 
+
+
+Since the goal of backpropagation is to minimize the error E, which depends on the network weights, we have to deal with all weights in the network one at a time.
+To perform the backpropagation, the output of each unit from the forward pass must be stored. The gradients with respect to each parameter $w_{ij}$ is being calculated.
+
+\begin{enumerate}
+\itemsep0em
+\item As a first step we calculate so-called errors $\delta_{i}^{(o)}$ for the output units:
+
+\begin{equation}
+\delta_{i}^{(o)} = \frac{\partial E}{\partial o_{i}} f'(z_{i})
+\end{equation}
+
+where $z_{i}$ is the input to the output layer.
+\item We determine $\delta_{i}^{(l)}$ for all hidden layers in the network:
+
+\begin{equation}
+\delta_{i}^{(l)} = f'(z_{i}^{(l)}) \sum_{k=1}^{m^{(l+1)}} w_{i,k}^{(l+1)} \delta_{k}^{(l+1)}
+\end{equation}
+where $m^{(l)}$ is the number of units in layer $l$.
+\item We calculate the derivative:
+\begin{equation}
+\frac{\partial E}{\partial w_{j,i}^{(l)}} = \delta_{j}^{(l)}y_{i}^{(l-1)}
+\end{equation}
+\item Once all partial derivatives have been computed, the gradient descent is performed by subtracting from each weight the increment:
+\begin{equation}
+\Delta w_{ij} = \lambda z_{j}^{(l-1)} \delta_{j}^{(l)}
+\end{equation}
+
+where $\lambda$ is a learning rate, which determines how fast the network coefficients change. 
+\end{enumerate}
+
+After choosing the initial weights of the network randomly, the backpropagation algorithm is used to compute the necessary corrections. The neural network training process can be decomposed in the following steps:
+
+\begin{enumerate}
+\itemsep0em 
+\item Feed-forward pass
+\item Backpropagation of each layer
+\item Weight updates
+\end{enumerate}
+The algorithm is stopped when the value of the error function is sufficiently small.
 
 
 \subsection{ANN topology}
@@ -99,77 +178,4 @@ There are plenty various configurations of feed-forward ANN, which can differ in
 The neural network with more than one hidden layer is known as Deep Neural Network. (Figure 6.4). This type of ANN is suitable for processing very high-dimensional data, hence it seems to be a good choice for the facial recognition system design. 
 
 
-\section{Backpropagation}
 
-One of the main requirements for training this kind of algorithms is data. All learning algorithms use data in their training processes, but ANN require more than most.Given the data, there are various learning algorithms, from which gradient descent (backpropagation) is considered the most successful of all of them.
-
-
-Backpropagation, also called gradient descent, is a common method for training a neural network. It is used for training Multilayer Perception Network as well as Convolutional Neural Network.
-
-The basic idea of gradient descent method is to adjust the parameters of the neural networks in the way that the computed difference between predicted and expected values will be minimized. 
-
-The choice of error functions (cost functions) is wide. One of the simplest approaches is to calculate the Euclidean distance between the predicted $o$ and expected $o'$ values: 
-
-\begin{equation}
-E_{1}(o,o') = \frac{||o-o'||^{2}}{2}
-\end{equation}
-
-The error can be also calculated using Mean Squared Error: 
-\begin{equation}
-E_{2}(o,o') = \frac{\sum_{k=1}^{K}(o_{i} - o'_{i})^2}{K}
-\end{equation}
-
-
-When using a neural network to perform classification and prediction, it is usually better to use cross-entropy error than classification error or mean squared error, due to the better convergence of the gradient.
-
-\begin{equation}
-E_{3}(o, o') = -\frac{1}{K} \sum_{i=1}^K o'_{i} \ln(o_{i}) + \left(1 - o'_{i}\right) \ln \left(1 - o_{i})\right)
-\end{equation} 
-
-
-Since the goal of backpropagation is to minimize the error E, which depends on the network weights, we have to deal with all weights in the network one at a time.
-To perform the backpropagation, the output of each unit from the forward pass must be stored. The gradients with respect to each parameter $w_{ij}$ is being calculated.
-
-Lets assume that $w_{ij}$ is the weight associated to the edge connecting the i-th and the j-th node in the network.
-
-This weight can be treated as an input channel into the subnetwork made of all paths starting at $w_{ij}$ and ending in the output layer. The information fed into the subnetwork in the feed-forward step was $o_i w_{ij}$ , where $o_i$ is the stored output of unit i.
-
-The backpropagation step computes the gradient of E with respect to this input. Since in the backpropagation step $o_i$ is treated as a constant, the gradient is computed as follows:
-
-\begin{equation}
-\frac{\partial E}{\partial w_{ij}} = o_i \frac{\partial E}{\partial o_i w_{ij}}
-\end{equation}
-
-The backpropagated error at the j-th node can be denoted by $\delta_j$. Then the partial derivative of error with respect to weight $w_{ij}$ can be expressed as:
-\begin{equation}
-\frac{\partial E}{\partial w_{ij}} = o_i \delta_j
-\end{equation}
-
-
-To successfully compute the backpropagation errors for the network with multiple layers, such as CNN or MLP, the chain rule can be applied.
-
-\begin{equation}
-(f \circ g)' = (f' \circ g) \cdot g'
-\end{equation}
-
-\begin{equation}
-\frac{\partial E}{\partial w_{ij}} =  \frac{\partial E}{\partial o_{i}} \frac{\partial o_i}{\partial w_{ij}} 
-\end{equation}
-
-
-Once all partial derivatives have been computed, the gradient descent is performed by subtracting from each weight the increment:
-\begin{equation}
-\Delta w_{ij} = \lambda o_i \delta_j
-\end{equation}
-
-where $\lambda$ is a learning rate, which determines how fast the network coefficient change.
-
-After choosing the initial weights of the network randomly, the backpropagation algorithm is used to compute the necessary corrections. The neural network training process can be decomposed in the following steps:
-
-\begin{enumerate}
-\itemsep0em 
-\item Feed-forward pass
-\item Backpropagation of each layer
-\item Weight updates
-\end{enumerate}
-The algorithm is stopped when the value of the error function is sufficiently small.
